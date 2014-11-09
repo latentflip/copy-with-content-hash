@@ -1,6 +1,6 @@
 {
   "name": "hash-filename",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Create a copy of a file, adding a short hash of it's contents to the filename",
   "main": "hash-filenam.js",
   "bin": "cli.js",
