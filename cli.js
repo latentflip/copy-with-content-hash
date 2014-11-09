@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-// hash-filename foo.js
-// hash-filename foo.js bar.js
-// hash-filename foo.js bar.js -o some/dir
-// hash-filename -o some/dir foo.js bar.js
+// copy-with-content-hash foo.js
+// copy-with-content-hash foo.js bar.js
+// copy-with-content-hash foo.js bar.js -o some/dir
+// copy-with-content-hash -o some/dir foo.js bar.js
 
 var nopt = require('nopt');
 var path = require('path');
