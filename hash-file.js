@@ -12,7 +12,10 @@ module.exports = function (file, outdir, done) {
 
         var filename = path.basename(file);
         var newFilename = injectHashInFilename(filename, hash);
-        fs.copy(file, path.join(outdir, newFilename), done);
+        fs.copy(file, path.join(outdir, newFilename), function (err) {
+            if (err) { return done(err); }
+            return done(null, newFilename);
+        });
     });
 };
 
